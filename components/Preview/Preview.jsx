@@ -5,7 +5,7 @@ import markdownComponents from "../markdown";
 import { markdownOptions } from "@/lib/markdown";
 
 export default function Preview({ markdown }) {
-    console.log("preview rerender")
+    //console.log("preview rerender")
   return (
     <div className={styles.container}>
       <ReactMarkDown {...markdownOptions}

@@ -1,0 +1,21 @@
+
+
+.codeBlockHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.code{
+    padding: 5px 0 5px 0;
+    border-radius: 2px;
+    overflow: auto;
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+.codeBlock{
+    background: rgb(210, 201, 201);
+    padding: 10px;
+    border-radius: 5px;
+}

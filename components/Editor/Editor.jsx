@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Editor.module.css";
 
 export default function Editor({ markdown, setMarkdown }) {
-    console.log("Editor rerender")
+    //console.log("Editor rerender")
   const handleMarkdownChange = (e) => {
     setMarkdown(e.target.value);
   };

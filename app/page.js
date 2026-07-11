@@ -7,7 +7,7 @@ import React from 'react'
 
 export default function Home() {
   const [markdown,setMarkdown]=useState("");
-  console.log("Home rerender")
+  //console.log("Home rerender")
   return (
     <div>
       <EditorLayout
