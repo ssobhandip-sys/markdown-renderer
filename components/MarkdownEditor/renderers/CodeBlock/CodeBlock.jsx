@@ -1,6 +1,7 @@
 import styles from "./CodeBlock.module.css";
 import CopyButton from "./CopyButton";
 import LanguageBadge from "./LanguageBadge";
+import SyntaxHighlighter from "./SyntaxHighlighter/SyntaxHighlighter";
 
 export function CodeBlock({ children, className, ...props }) {
   console.log("code block", props);
@@ -15,11 +16,10 @@ export function CodeBlock({ children, className, ...props }) {
     <div className={styles.codeBlock}>
       <div className={styles.codeBlockHeader}>
         <LanguageBadge language={language} style={styles.languageBadge} />
-        <CopyButton className={styles.copyButton} />
+        <CopyButton text={children} className={styles.copyButton} />
       </div>
-      <pre>
-        <code className={styles.code}>{children}</code>
-      </pre>
+        {/* <code className={styles.code}>{children}</code> */}
+        <SyntaxHighlighter code={children} language={language} />
     </div>
   );
 }

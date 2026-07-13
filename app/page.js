@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import EditorLayout from "@/components/EditorLayout/EditorLayout";
+import EditorLayout from "@/components/MarkdownEditor/EditorLayout/EditorLayout";
 
 import React from 'react'
 
