@@ -1,19 +1,16 @@
 "use client";
 
 import { useState } from "react";
-import EditorLayout from "@/components/MarkdownEditor/EditorLayout/EditorLayout";
+import MarkdownEditor from "@/components/MarkdownEditor/MarkdownEditor";
 
 import React from 'react'
 
 export default function Home() {
-  const [markdown,setMarkdown]=useState("");
+  
   //console.log("Home rerender")
   return (
     <div>
-      <EditorLayout
-      markdown={markdown}
-      setMarkdown={setMarkdown}
-      />
+      <MarkdownEditor/>
     </div>
   )
 }
